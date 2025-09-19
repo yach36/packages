@@ -1,0 +1,34 @@
+{
+  "name": "@yach36/panda",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.10.0",
+  "scripts": {
+    "prepare": "panda codegen"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^1.3.0"
+  },
+  "exports": {
+    "./css": {
+      "types": "./src/panda/css/index.d.ts",
+      "require": "./src/panda/css/index.mjs",
+      "import": "./src/panda/css/index.mjs"
+    },
+    "./tokens": {
+      "types": "./src/panda/tokens/index.d.ts",
+      "require": "./src/panda/tokens/index.mjs",
+      "import": "./src/panda/tokens/index.mjs"
+    },
+    "./types": {
+      "types": "./src/panda/types/index.d.ts",
+      "require": "./src/panda/types/index.mjs",
+      "import": "./src/panda/types/index.mjs"
+    },
+    "./patterns": {
+      "types": "./src/panda/patterns/index.d.ts",
+      "require": "./src/panda/patterns/index.mjs",
+      "import": "./src/panda/patterns/index.mjs"
+    },
+    "./styles.css": "./src/panda/styles.css"
+  }
+}
